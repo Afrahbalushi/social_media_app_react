@@ -1,38 +1,124 @@
 .App {
-  text-align: center;
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	margin: 20px auto;
+	max-width: 800px;
+	padding: 30px;
+	background-color: #f8f9fa;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+	text-align: center;
+	color: #17a2b8;
+	font-size: 28px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.post-form {
+	margin-bottom: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.post-text {
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 20px;
+	border: 2px solid #17a2b8;
+	border-radius: 4px;
+	font-size: 16px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
+.post-image {
+	width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+	border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.post-button {
+	background-color: #17a2b8;
+	color: #ffffff;
+	border: none;
+	padding: 15px 30px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 18px;
+	text-transform: uppercase;
+	transition: background-color 0.3s ease;
+}
+
+.post-button:hover {
+	background-color: #138496;
+}
+
+.post-card {
+	background-color: #ffffff;
+	border: none;
+	border-radius: 4px;
+	padding: 30px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+}
+
+.edit-button,
+.delete-button,
+.like-button
+{
+  background-color: #17a2b8;
+	color: #ffffff;
+	border: none;
+	padding: 10px 20px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 12px;
+	text-transform: uppercase;
+	transition: background-color 0.3s ease;
+}
+
+input[type=file]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #17a2b8;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+  background: #058093;
+}
+
+
+comment-section{
+  border: none;
+}
+.comment-input {
+	position:relative;
+	font-size: 20px;
+background: linear-gradient(21deg, #bfdee3);
+	padding: 10px;
+	display: inline-block;
+	border-radius: 9999em;
+	}
+
+  .delete-comment-button
+{
+  background-color: #17a2b8;
+	color: #ffffff;
+	border: none;
+	padding: 5px 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 10px;
+	text-transform: uppercase;
+	transition: background-color 0.3s ease;
 }
