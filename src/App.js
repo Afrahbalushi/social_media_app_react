@@ -7,7 +7,7 @@ function App() {
   const [newPostImage, setNewPostImage] = useState(null);
   const [comments, setComments] = useState([]);
   const [likes, setLikes] = useState([]);
-
+ 
   const handleTextChange = (event) => {
     setNewPostText(event.target.value);
   };
