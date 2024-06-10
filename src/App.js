@@ -31,7 +31,7 @@ function App() {
   const handleDeletePost = (index) => {
     const updatedPosts = [...posts];
     updatedPosts.splice(index, 1);
-    setPosts(updatedPosts);
+    setPosts(updatedPosts); 
   };
 
   const handleEditPost = (index) => {
